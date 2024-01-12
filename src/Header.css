@@ -1,0 +1,55 @@
+.header {
+    height: 60px;
+    display: flex; /* This will layout children horizontally */
+    align-items: center; /* Align items vertically in the center */
+    background-color: #131921;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    color: white;
+    border: 2px solid black; /* Example border */
+    border-radius: 10px;
+}
+
+.header_logo, .header_search, .header_nav {
+    display: flex;
+    align-items: center;
+}
+
+.header_logo {
+    color: #ff9f00;
+    margin: 0 25px;
+}
+
+/* ... other styles remain unchanged ... */
+
+.header_search {
+    flex: 1; /* This will allow the search bar to take up remaining space */
+    justify-content: center;
+    margin: 0 10px;
+    cursor: pointer
+}
+
+.header_nav {
+    justify-content: space-evenly;
+    display: flex; /* or 'display: grid;' */
+    gap: 30px; /* Adjust the gap size as needed */
+    margin-right: 30px;
+}
+
+.header__searchInput {
+    width: 60%; /* Adjust width as needed, 100% takes the full width of its container */
+    height: 40px; /* Adjust height to make the input field larger */
+    padding: 0 15px; /* Adjust padding for internal spacing */
+    border-radius: 15px; /* This gives medium rounded corners */
+    border: 1px solid #ccc; /* Optional: adds a border to the input field */
+    margin-right: 10px;
+}
+
+.nav__item .nav__itemLineTwo:first-child {
+    border: #ffffff
+}
+
+
+
+/* ... remaining styles ... */
