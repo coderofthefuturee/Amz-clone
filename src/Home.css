@@ -1,0 +1,34 @@
+.home__image {
+    position: absolute; /* Fix the image to the viewport */
+    top: -56px;
+    left: 0;
+    width: 100vw; /* Full viewport width */
+    height: 100vh; /* Full viewport height */
+    object-fit: contain ; /* This will cover the entire area without stretching the image */
+    z-index: -1; /* Send it to the back if you have other content */
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0,0,0,0));
+}
+
+body {
+    min-height: 200vh; /* Temporary height for testing */
+    overflow-y: auto;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+}
+
+.home__row {
+    display: flex;
+    z-index: 1;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.home__container {
+    margin-top: 300px;
+}
