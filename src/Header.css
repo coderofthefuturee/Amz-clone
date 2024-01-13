@@ -52,7 +52,6 @@
 
 body {
     background-color: hsl(0, 0%, 0%); /* Standard gray */
-    /* with transparency */
     background-color: hsla(0, 0%, 50%, 0.5); /* Gray with 50% transparency */
 }
 
